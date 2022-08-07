@@ -1,0 +1,49 @@
+.contact {
+  padding: 3rem 1.5rem 1rem 1.5rem;
+  background-image: linear-gradient(270deg, var(--gradient));
+  border-radius: 1.4rem 1.4rem 0 0;
+  display: grid;
+  grid-template:
+    "icon-left avatar name icon-right" auto
+    "icon-left avatar status icon-right" auto / auto auto 1fr auto;
+  align-items: center;
+  gap: 0 0.7rem;
+  color: var(--neutral-color-200);
+  position: relative;
+  &::after {
+    background-color: var(--neutral-color-100);
+    inset: 0 5rem 74% 5rem;
+    border-radius: 0 0 3rem 3rem;
+    content: "";
+    position: absolute;
+  }
+  &__icon-left {
+    grid-area: icon-left;
+    color: var(--neutral-color-200);
+    font-size: 1.2rem;
+  }
+  &__avatar {
+    grid-area: avatar;
+  --deg: 270deg;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--neutral-color-200);
+  }
+  &__name {
+    grid-area: name;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  &__status {
+    grid-area: status;
+    color: var(--neutral-color-200);
+    opacity: 0.5;
+    font-size: 0.7rem;
+  }
+  &__icon-right {
+    grid-area: icon-right;
+    font-size: 1.2rem;
+    color: var(--neutral-color-200);
+  }
+}

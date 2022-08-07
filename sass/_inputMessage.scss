@@ -1,0 +1,26 @@
+.input-message {
+  position: relative;
+  margin-top: 0.5rem;
+  &__contents {
+    color: var(--primary-color-600);
+    font-size: 1rem;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 3rem;
+  }
+  &__send {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--primary-color-500);
+    border-radius: 50%;
+  }
+  &__icon-right {
+    color: var(--neutral-color-200);
+  }
+}

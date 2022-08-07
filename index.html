@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Chat App Css Illustration</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="app" aria-label="app">
+        <article class="phone">
+          <div class="contact">
+            <i class="contact__icon-left fa-solid fa-chevron-left"></i>
+            <img
+              class="contact__avatar"
+              src="./images/avatar.jpg"
+              alt="image avatar"
+            />
+            <h3 class="contact__name">Samuel Green</h3>
+            <p class="contact__status">Available to Walk</p>
+            <i class="contact__icon-right fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="messages">
+            <p class="message message--contact">
+              That sounds great. I’d be happy with that.
+            </p>
+            <p class="message message--contact">
+              Could you send over some pictures of your dog, please?
+            </p>
+            <ul class="message message--user message--images">
+              <li class="message__image">
+                <img src="./images/dog-image-1.jpg" alt="dog image" />
+              </li>
+              <li class="message__image">
+                <img src="./images/dog-image-2.jpg" alt="dog image" />
+              </li>
+              <li class="message__image">
+                <img src="./images/dog-image-3.jpg" alt="dog image" />
+              </li>
+            </ul>
+            <p class="message message--user">
+              Here are a few pictures. She’s a happy girl!
+            </p>
+            <p class="message message--user">Can you make it?</p>
+            <p class="message message--contact">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+            <p class="message message--contact notification">
+              <span class="notification__circle"></span>
+              <span class="notification__text">30 minute walk</span> <span class="notification__price">$29</span>
+            </p>
+            <p class="message message--contact notification">
+              <span class="notification__circle"></span>
+              <span class="notification__text">1 hour walk</span> <span class="notification__price">$49</span>
+            </p>
+            <form class="message__input input-message">
+              <input
+                class="input-message__contents"
+                type="text"
+                placeholder="Type a message…"
+              />
+              <button class="input-message__send">
+                <i
+                  class="input-message__icon-right fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </form>
+          </div>
+        </article>
+
+        <article class="app__info info-app">
+          <h1 class="info-app__heading">Simple booking</h1>
+          <p class="info-app__details">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
